@@ -1,8 +1,9 @@
 import Link from 'next/link';
+import { WaitlistForm } from '@/components/WaitlistForm';
 
 export default function Home() {
   return (
-    <div className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-4">
+    <div className="min-h-[calc(100vh-4rem)] flex flex-col items-center justify-center px-4 py-16">
       <div className="text-center max-w-3xl mx-auto">
         <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl mx-auto mb-8" />
 
@@ -48,6 +49,17 @@ export default function Home() {
             <p className="text-sm text-[var(--muted-foreground)]">
               Formulas, sheet structure, and troubleshooting.
             </p>
+          </div>
+        </div>
+
+        {/* Waitlist Section */}
+        <div className="mt-20 max-w-md mx-auto">
+          <div className="p-8 rounded-2xl border border-[var(--border)] bg-[var(--muted)]/30">
+            <h2 className="text-2xl font-bold mb-2">Get Early Access</h2>
+            <p className="text-[var(--muted-foreground)] mb-6">
+              Join the waitlist to be notified when new features launch.
+            </p>
+            <WaitlistForm />
           </div>
         </div>
       </div>
