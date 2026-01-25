@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { SignInButton, SignUpButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import { Search } from './Search';
 import { useTheme } from './ThemeProvider';
 
@@ -23,9 +22,6 @@ export function Header() {
             <Link href="/docs/quick-start" className="text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">
               Quick Start
             </Link>
-            <a href="https://gumroad.com" target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">
-              Buy Now
-            </a>
           </nav>
         </div>
 
@@ -60,22 +56,15 @@ export function Header() {
             </svg>
           </a>
 
-          {/* Auth Buttons */}
-          <SignedOut>
-            <SignInButton mode="modal">
-              <button className="text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">
-                Sign In
-              </button>
-            </SignInButton>
-            <SignUpButton mode="modal">
-              <button className="px-4 py-2 text-sm font-medium bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg hover:opacity-90 transition-opacity">
-                Sign Up
-              </button>
-            </SignUpButton>
-          </SignedOut>
-          <SignedIn>
-            <UserButton afterSignOutUrl="/" />
-          </SignedIn>
+          {/* Launch App Button */}
+          <a
+            href="https://app-eight-tau-65.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 text-sm font-medium bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg hover:opacity-90 transition-opacity"
+          >
+            Launch App
+          </a>
         </div>
       </div>
     </header>
