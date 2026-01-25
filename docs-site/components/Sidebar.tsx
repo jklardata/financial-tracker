@@ -12,37 +12,37 @@ interface NavItem {
 const navigation: NavItem[] = [
   {
     title: 'Getting Started',
-    href: '/docs',
+    href: '/intro',
     items: [
-      { title: 'Introduction', href: '/docs' },
-      { title: 'Quick Start', href: '/docs/quick-start' },
+      { title: 'Introduction', href: '/intro' },
+      { title: 'Quick Start', href: '/quick-start' },
     ],
   },
   {
     title: 'Features',
-    href: '/docs/features',
+    href: '/features',
     items: [
-      { title: 'Net Worth Dashboard', href: '/docs/features/net-worth' },
-      { title: 'Credit Card Optimizer', href: '/docs/features/credit-cards' },
-      { title: 'Tax Optimization', href: '/docs/features/taxes' },
-      { title: 'Travel Points', href: '/docs/features/travel-points' },
+      { title: 'Net Worth Dashboard', href: '/features/net-worth' },
+      { title: 'Credit Card Optimizer', href: '/features/credit-cards' },
+      { title: 'Tax Optimization', href: '/features/taxes' },
+      { title: 'Travel Points', href: '/features/travel-points' },
     ],
   },
   {
     title: 'Configuration',
-    href: '/docs/configuration',
+    href: '/configuration',
     items: [
-      { title: 'Settings', href: '/docs/configuration/settings' },
-      { title: 'Customization', href: '/docs/configuration/customization' },
+      { title: 'Settings', href: '/configuration/settings' },
+      { title: 'Customization', href: '/configuration/customization' },
     ],
   },
   {
     title: 'Reference',
-    href: '/docs/reference',
+    href: '/reference',
     items: [
-      { title: 'Sheet Structure', href: '/docs/reference/structure' },
-      { title: 'Formulas', href: '/docs/reference/formulas' },
-      { title: 'Troubleshooting', href: '/docs/reference/troubleshooting' },
+      { title: 'Sheet Structure', href: '/reference/structure' },
+      { title: 'Formulas', href: '/reference/formulas' },
+      { title: 'Troubleshooting', href: '/reference/troubleshooting' },
     ],
   },
 ];

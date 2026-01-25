@@ -16,10 +16,10 @@ export function Header() {
             <span className="font-bold text-xl">WealthTrack Pro</span>
           </Link>
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/docs" className="text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">
+            <Link href="/intro" className="text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">
               Documentation
             </Link>
-            <Link href="/docs/quick-start" className="text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">
+            <Link href="/quick-start" className="text-sm text-[var(--muted-foreground)] hover:text-[var(--foreground)] transition-colors">
               Quick Start
             </Link>
           </nav>

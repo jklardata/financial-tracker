@@ -127,7 +127,7 @@ export default function DocsPage() {
       <h2>Next Steps</h2>
 
       <p>
-        Ready to get started? Head over to the <a href="/docs/quick-start">Quick Start Guide</a> to set up your tracker in under 10 minutes.
+        Ready to get started? Head over to the <a href="/quick-start">Quick Start Guide</a> to set up your tracker in under 10 minutes.
       </p>
     </article>
   );

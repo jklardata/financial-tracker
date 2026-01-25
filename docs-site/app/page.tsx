@@ -17,13 +17,13 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
-            href="/docs"
+            href="/intro"
             className="px-8 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg font-semibold hover:opacity-90 transition"
           >
             Read the Docs
           </Link>
           <Link
-            href="/docs/quick-start"
+            href="/quick-start"
             className="px-8 py-3 bg-[var(--muted)] text-[var(--foreground)] rounded-lg font-semibold hover:bg-[var(--border)] transition"
           >
             Quick Start
