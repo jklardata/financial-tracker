@@ -35,14 +35,22 @@ jobs:
         run: npm ci
         working-directory: docs-site
 
-      - name: Build
+      - name: Build docs site
         run: npm run build
         working-directory: docs-site
+
+      - name: Prepare deployment folder
+        run: |
+          mkdir -p _site
+          # Copy landing page to root
+          cp index.html _site/
+          # Copy docs-site build to /docs subfolder
+          cp -r docs-site/out _site/docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs-site/out
+          path: _site
 
   deploy:
     environment:
