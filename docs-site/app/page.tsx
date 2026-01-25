@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { WaitlistForm } from '@/components/WaitlistForm';
 
 export default function Home() {
   return (
@@ -52,14 +51,21 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Waitlist Section */}
+        {/* CTA Section */}
         <div className="mt-20 max-w-md mx-auto">
           <div className="p-8 rounded-2xl border border-[var(--border)] bg-[var(--muted)]/30">
-            <h2 className="text-2xl font-bold mb-2">Get Early Access</h2>
+            <h2 className="text-2xl font-bold mb-2">Try WealthTrack</h2>
             <p className="text-[var(--muted-foreground)] mb-6">
-              Join the waitlist to be notified when new features launch.
+              Start tracking your net worth and credit cards today.
             </p>
-            <WaitlistForm />
+            <a
+              href="https://app-eight-tau-65.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full px-6 py-3 bg-[var(--primary)] text-[var(--primary-foreground)] rounded-lg font-semibold hover:opacity-90 transition text-center"
+            >
+              Launch App
+            </a>
           </div>
         </div>
       </div>
